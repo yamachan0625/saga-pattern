@@ -53,7 +53,7 @@ export class SagaProcessor {
               await stepForward();
               await this.makeStepForward(index + 1, payload);
             } catch (e) {
-              const stepBackwardIndex = index === 0 ? 0 : index - 1;
+              const stepBackwardIndex = index - 1;
               await this.makeStepBackward(stepBackwardIndex, payload);
             }
             return;

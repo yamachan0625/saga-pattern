@@ -1,4 +1,4 @@
-import { SagaDefinitionBuilder } from './saga/saga-definition-builder';
+import { SagaDefinitionBuilder } from './saga-definition-builder';
 
 const run = async () => {
   const sagaDefinitionBuilder = new SagaDefinitionBuilder()
